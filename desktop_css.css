@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('website_fonts_img/helveticaneue-extended-webfont.woff2') format('woff2'),
+         url('website_fonts_img/helveticaneue-extended-webfont.woff') format('woff'),
+         url('website_fonts_img/helveticaneue-extended-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.imgHover{
+  display: none;
+  position: absolute;
+  max-width: 40vw;
+  max-height: 80vh
+}
+
+input{
+  position: absolute;
+  display: none;
+  right: 25pt;
+	width: 30vw;
+	padding: 5px 5px 5px 5px;
+  text-align: center;
+  font-size: 3vh;
+	margin: 1.4vh 2vh;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	-moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+p{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+
+@media (min-height: 500px){
+  p{
+    font-size: 2.3vh;
+  }
+}
+
+@media (max-height: 500px){
+  p{
+    font-size: 8pt;
+  }
+
+  #names{
+    line-height: 9pt;
+  }
+}
+
+.fourD, .threeD, .twoD, .xD, .listGroup{
+  cursor: pointer;
+}
+
+#names{
+  /*height: 83%;*/
+  overflow: scroll;
+  margin-top: 2.5vh;
+}
+
+.columns {
+  width: 12%;
+  margin: auto 2%;
+  float: left;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+#columnONE{
+  width: 13%;
+  margin-left: 6%;
+}
+
+#columnTHREE{
+  margin-left: 1%;
+  width: 10%;
+}
+
+.profilePage, .groupPage{  
+  z-index: 0;
+  transform: translate(100%, 0);
+  position: absolute;
+  background-color: white;
+  top: 0;
+  height: 95%;
+  width: 100%;
+}
+
+.back{
+  position: absolute;
+  top: 48%;
+  left: 1%;
+  height: 4%;
+  cursor: pointer;
+}
+
+.profileName, .groupName{
+  position: absolute;
+  font-family: 'helvetica_neueregular';
+  font-size: 6vh;
+  margin-left: 6%;
+}
+
+.profileGroup{
+  position: absolute;
+  font-family: 'helvetica_neueregular';
+  font-size: 6vh;
+  top: 30%;
+  margin-left: 6%;
+}
+
+.profileContacts{
+  position: absolute;
+  font-family: 'helvetica_neueregular';
+  font-size: 6vh;
+  margin-left: 6%;
+  top: 60%;
+}
+
+.profileTitles{
+  position: absolute;
+  font-size: 2.5vh;
+  font-style: italic;
+  left: 55%;
+  padding-top: 5%;
+}
+
+.profileText, .groupText{
+  position: absolute;
+  font-size: 3.5vh;
+  line-height: initial;
+  height: 55%;
+  width: 40%;
+  overflow-x: none;
+  overflow-y: scroll;
+  top: 27%;
+  left: 55%;
+  z-index: 0;
+}
+
+.groupText{
+  top: 25%;
+}
+
+.profileImagesDIV{
+  position: absolute;
+  height: 68%;
+  width: 35%;
+  top: 0;
+  right: 47%;
+  padding-top: 10%;
+  margin-left: 6%;
+  overflow: scroll;
+  text-align: right;
+}
+
+.profileImages{
+  float: right;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.groupLocation{
+  position: absolute;
+  font-family: 'helvetica_neueregular';
+  font-size: 6vh;
+  margin-left: 6%;
+  top: 55%;
+}
+
+#works4D{
+  position: absolute;
+  font-size: 2.5vh;
+  font-style: italic;
+  left: 55%;
+  padding-top: 5%;
+}
+
+.groupNames{
+  position: absolute;
+  text-align: right;
+  overflow: scroll;
+  line-height: 2.5vh;
+  top: 0;
+  right: 47%;
+  bottom: 12%;
+  padding-top: 10%;
+  margin-left: 6%;
+}
+
+#locations{
+  position: absolute;
+  top: 15%;
+  bottom: 12%;
+  left: 6%;
+  width: 20%;
+  white-space: nowrap;
+}
+
+h1.floor, h1.room{
+  display: inline-block;
+  font-family: 'helvetica_neueregular';
+  font-size: 3.5vh;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 3% 0%;
+}
+
+.room{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h1.floor{
+  margin-top: 10%;
+}
+
+#ground_floor{
+  color: blue;
+}
+
+h1.room{
+  margin-left: 10%;
+}
+
+#imgMapsDiv{
+  position: absolute;
+  height: 83vh;
+  width: 47vw;
+  right: 0;
+}
+
+.mapsSlide{
+  position: absolute;
+  height: 83vh;
+  width: 47vw;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  background-color: white;
+  transform: translate(100%, 0);
+}
+
+#imgMaps, #mapsSlide{
+  height: 83vh;
+  display: inline-block;
+}
+
+.legenda{
+  height: 30vh;
+  display: inline-block;
+}
+
+#search{
+  height: 3vh;
+  margin-top: 2.5vh;
+}
+
+#footer {
+  font-family: 'helvetica_neueregular';
+  font-size: 1.6vh;
+  position: absolute;
+  bottom: 0pt;
+  width: 90%;
+  height: 12%;
+  margin-left: 6%;
+  z-index: 9999;
+  background: white;
+}
+
+.footerLeft {
+  line-height: 10pt;
+  margin-right: 10pt;
+  cursor: pointer;
+}
+
+#footerLeft {
+  float: left;
+}
+
+.footerRight {
+  float: right;
+  margin-left: 10pt;
+  margin-right: 10pt;
+  cursor: pointer;
+}
+
+.slideIn{
+  transform:translate(0%, 0);
+  transition:ease 2s transform;
+}
+
+.slideOut{
+  transform:translate(100%, 0);
+  transition:ease 2s transform;
+}
+
+.slideInMaps{
+  transform:translate(0%, 0);
+  transition:ease 2s transform;
+}
+
+.slideOutMaps{
+  transform:translate(215%, 0);
+  transition:ease 2s transform;
+}
+
+.search{
+  transform: rotateY(90deg);
+  transition: ease 1s transform;
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="detectmobilebrowser.js"></script>
+  <script>
+    if(jQuery.browser.mobile){
+        window.location.replace("mobile_index.html");
+    } else{
+        window.location.replace("desktop_index.html");
+    }
+  </script>
+</head>
+</html>
